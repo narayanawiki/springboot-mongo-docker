@@ -2,7 +2,7 @@ version: "3"
 services:
   javatechiemongodb:
     image: mongo:latest
-    container_name: "javatechiemongodb"
+    container_name: "narayanamongodb"
     ports:
       - 27017:27017
   springboot-mongodb:
@@ -11,4 +11,4 @@ services:
     ports:
       - 8080:8080
     links:
-      - javatechiemongodb
+      - narayanamongodb
